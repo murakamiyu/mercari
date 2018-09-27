@@ -36,7 +36,7 @@ mercari(フリーマーケットアプリ)
 
 ### Association
 - has_many :points, dependent: :destroy
-- has_one :transfer_to, dependent: :destroy
+- has_one :transfer, dependent: :destroy
 - has_one :credit_card, dependent: :destroy
 - has_many :user_evaluations
 - belongs_to :area
@@ -60,7 +60,7 @@ mercari(フリーマーケットアプリ)
 |family_name|string|null: false|
 |first_name|string|null: false|
 |address_fullname|string|null: false|
-|birthdate|string|null: false|
+|birthdate|date|null: false|
 |user_id|references|null: false, foreign_key: true|
 
 ### Association
@@ -189,30 +189,21 @@ mercari(フリーマーケットアプリ)
 
 |Column|Type|Options|
 |------|----|-------|
+|comment|text||
+|appropriateness|integer||
 |user_id|integer|null: false, foreign_key: true|
 |item_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
 - belongs_to :item
-
-
-## commentsテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|item_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
-
-### Association
-- belongs_to :item
-- belongs_to :user
 
 
 ## personal commentsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
+|comment|text||
 |item_id|integer|null: false, foreign_key: true|
 |seller_id|integer|null: false, foreign_key: true|
 |buyer_id|integer|null: false, foreign_key: true|
@@ -267,7 +258,7 @@ mercari(フリーマーケットアプリ)
 |------|----|-------|
 |title|string|null: false|
 |point|integer|null: false|
-|limits|integer|null: false|
+|limits|date||
 |user_id|references|null: false, foreign_key: true|
 
 ### Association
@@ -317,6 +308,3 @@ mercari(フリーマーケットアプリ)
 ### Association
 - belongs_to : item
 - belongs_to : user
-
-
-
