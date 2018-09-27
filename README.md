@@ -23,9 +23,9 @@
 - has_many :points
 - has_many :user_evaluations
 - belongs_to :area
-- has_many :likes
+- has_many :likes, dependent: :destroy
 - has_many :comments
-- has_many :comment2s
+- has_many :personal_comments
 - has_many :allocations
 - has_many :messages, through: :allocations
 - has_many :todos
