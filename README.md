@@ -1,16 +1,16 @@
 # README
 
-##最終課題アプリ
+## 最終課題アプリ
 mercari(フリーマーケットアプリ)
 
-##実装機能予定
-#共通機能
+## 実装機能予定
+### 共通機能
 →ユーザー情報登録(ニックネーム、紹介文、フルネーム、住所、e-mail、電話番号、パスワード、生年月日など)、サインイン、サインアウト、クレジットカード登録、取引評価(出品者と購入者双方)、商品に対するコメント
 
-#出品側機能
+### 出品側機能
 →商品情報登録機能(名前、画像、説明、カテゴリー、サイズ、ブランド、配送方法、配送料、発送地域、商品状態、価格、売買状況など)、出品機能、売上管理(売上計上、売上金振込口座登録)
 
-#購入側機能
+### 購入側機能
 →売上計上、いいね機能(商品に対して)、取引評価(出品者と購入者双方)、ポイント管理(ポイント計上、有効期限管理)
 
 
@@ -45,7 +45,7 @@ mercari(フリーマーケットアプリ)
 - belongs_to : user
 
 
-## user_evaluationsテーブル
+## User_evaluationsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -59,11 +59,10 @@ mercari(フリーマーケットアプリ)
 - belongs_to : item
 
 
-## transactionsテーブル
+## Transactionsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|created_at|integer|null: false|
 |user_id|references|null: false, foreign_key: true|
 |item_id|references|null: false, foreign_key: true|
 
@@ -72,7 +71,7 @@ mercari(フリーマーケットアプリ)
 - belongs_to : user
 
 
-## pointsテーブル
+## Pointsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -84,3 +83,29 @@ mercari(フリーマーケットアプリ)
 ### Association
 - belongs_to : user
 
+
+## Allocationsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|references|null: false, foreign_key: true|
+|message_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to : user
+- belongs_to : message
+
+
+## Messagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|text|string|null: false|
+|user_id|references|null: false, foreign_key: true|
+|item_id|references|null: false, foreign_key: true|
+
+### Association
+- has_many : allocations
+- has_many : users, through: :allocations
+- belongs_to : item
