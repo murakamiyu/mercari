@@ -14,7 +14,7 @@ mercari(フリーマーケットアプリ)
 →売上計上、いいね機能(商品に対して)、取引評価(出品者と購入者双方)、ポイント管理(ポイント計上、有効期限管理)
 
 
-## Transfersテーブル
+## transfersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -32,7 +32,7 @@ mercari(フリーマーケットアプリ)
 - belongs_to : user
 
 
-## Sales_accountsテーブル
+## sales_accountsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -45,7 +45,7 @@ mercari(フリーマーケットアプリ)
 - belongs_to : user
 
 
-## User_evaluationsテーブル
+## user_evaluationsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -59,7 +59,7 @@ mercari(フリーマーケットアプリ)
 - belongs_to : item
 
 
-## Transactionsテーブル
+## transactionsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -71,7 +71,7 @@ mercari(フリーマーケットアプリ)
 - belongs_to : user
 
 
-## Pointsテーブル
+## pointsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -84,7 +84,7 @@ mercari(フリーマーケットアプリ)
 - belongs_to : user
 
 
-## Allocationsテーブル
+## allocationsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -96,7 +96,7 @@ mercari(フリーマーケットアプリ)
 - belongs_to : message
 
 
-## Messagesテーブル
+## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
