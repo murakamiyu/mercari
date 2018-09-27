@@ -63,6 +63,8 @@ Things you may want to cover:
 - has_many :personal_comments
 - has_many :messages
 - has_many :todos
+- has_many :user_evaluations
+- has_one :transaction
 
 
 ## imagesテーブル
