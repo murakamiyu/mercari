@@ -103,8 +103,8 @@ mercari(フリーマーケットアプリ)
 - has_many :likes, dependent: :destroy
 - has_many :comments
 - has_many :personal_comments
-- has_many :messages
-- has_many :todos
+- has_many :messages, dependent: :destroy
+- has_many :todos, dependent: :destroy
 - has_many :user_evaluations
 - has_one :transaction
 
@@ -294,8 +294,29 @@ mercari(フリーマーケットアプリ)
 |text|string|null: false|
 |user_id|references|null: false, foreign_key: true|
 |item_id|references|null: false, foreign_key: true|
+|created_at|datetime||
+|updated_at|datetime||
 
 ### Association
 - has_many : allocations
 - has_many : users, through: :allocations
 - belongs_to : item
+
+
+## todosテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|text|string|null: false|
+|item_id|references|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|created_at|datetime||
+|updated_at|datetime||
+
+### Association
+- belongs_to : item
+- belongs_to : user
+
+
+
