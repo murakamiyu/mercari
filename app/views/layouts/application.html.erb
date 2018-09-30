@@ -2,17 +2,13 @@
 <html>
   <head>
     <meta charaset="UTF-8">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="main_item.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="banner-top.css">
     <title>Mercari</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
   	<%= render "shared/header" %>
     <%= yield %>

@@ -1,5 +1,8 @@
-@import "banner-top";
-@import "side-bar";
-@import "items";
-@import "banner-bottom";
-@import "footer";
+@import "config/reset";
+@import "mixins/mixin";
+@import "modules/banner-top";
+@import "modules/side-bar";
+@import "modules/seller-button";
+@import "modules/items";
+@import "modules/banner-bottom";
+@import "modules/footer";
