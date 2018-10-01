@@ -119,12 +119,6 @@ audio, canvas, iframe, img, svg, video {
   vertical-align: middle;
 }
 
-a:-webkit-any-link {
-  color: -webkit-link;
-  cursor: pointer;
-  /*  text-decoration: underline;*/
-}
-
 li {
   display: list-item;
   text-align: -webkit-match-parent;
@@ -140,9 +134,9 @@ nav {
   color: currentColor;
 }
 
-/*.visible-pc {
-    display: none;
-}*/
+// .visible-pc {
+//     display: none;
+// }
 
 .pc-header {
   position: relative;
@@ -359,8 +353,7 @@ a:hover {
 }
 
 .pc-header-nav-parent {
-  display: none;
-  /*ここでドロップダウン要素消している*/
+  display: none;  /*ここでドロップダウン要素消している*/
   width: 224px;
 }
 
@@ -396,12 +389,12 @@ element.style {
   bottom: 0;
   background: #fff;
   -webkit-box-shadow: 1px 0 0 0 #eee inset;
-  box-shadow: 1px 0 0 0 #eee inset;
+  // box-shadow: 1px 0 0 0 #eee inset;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24);
 }
 
 .pc-header-nav-child {
-  display: none;
-  /*ここでドロップダウン要素消している*/
+  display: none;  /*ここでドロップダウン要素消している*/
   width: 224px;
   > a {
     padding: 8px 16px;
@@ -418,12 +411,12 @@ element.style {
   bottom: 0;
   background: #fff;
   -webkit-box-shadow: 1px 0 0 0 #eee inset;
-  box-shadow: 1px 0 0 0 #eee inset;
+  // box-shadow: 1px 0 0 0 #eee inset;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24);
 }
 
 .pc-header-nav-grand-child {
-  display: none;
-  /*ここでドロップダウン要素消している*/
+  display: none;  /*ここでドロップダウン要素消している*/
   width: 320px;
   > a {
     padding: 8px 16px;
