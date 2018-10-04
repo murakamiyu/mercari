@@ -31,4 +31,31 @@ end
 def logout
 end
 
+def sales_transfer
+end
+
+def points_confirmation
+end
+
+def points_confirmation
+end
+
+def points_history
+end
+
+def points_limit
+end
+
+def sales_history
+end
+
+def sales_tra_lim
+end
+
+def sales_tra_bank
+end
+
+def sales_tra_account_register
+end
+
 end
