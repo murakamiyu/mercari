@@ -10,4 +10,9 @@ Rails.application.routes.draw do
   get 'mypages/identification', to: 'mypages#identification'
   get 'mypages/sms_confirmation', to: 'mypages#sms_confirmation'
   get 'mypages/logout', to: 'mypages#logout'
+  get 'tests/account', to: 'tests#account'
+  get 'tests/sms_confirmation', to: 'tests#sms_confirmation'
+  get 'tests/adress_new', to: 'tests#adress_new'
+  get 'tests/credit_new', to: 'tests#credit_new'
+  get 'tests/account_completion', to: 'tests#account_completion'
 end
