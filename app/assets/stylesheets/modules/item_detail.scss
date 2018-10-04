@@ -168,6 +168,14 @@ a {
   vertical-align: middle;
 }
 
+.item-detail-table-sub-category i, span {
+  vertical-align: middle;
+}
+
+.item-detail-table-sub-sub-category i, span {
+  vertical-align: middle;
+}
+
 .fa-angle-right {
   font-size: 17px; 
 }
@@ -417,7 +425,11 @@ a {
   vertical-align: middle;
 }
 
-.nav-item-link-next a>i, p {
+.nav-item-link-next i, span {
+  vertical-align: middle;
+}
+
+.nav-item-link-prev i, span {
   vertical-align: middle;
 }
 
