@@ -37,4 +37,8 @@ class TestsController < ApplicationController
     render :layout => nil
   end
 
+  def putting_item
+    render :layout => nil
+  end
+
 end
