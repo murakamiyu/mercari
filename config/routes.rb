@@ -30,4 +30,5 @@ Rails.application.routes.draw do
   get 'tests/adress_new', to: 'tests#adress_new'
   get 'tests/credit_new', to: 'tests#credit_new'
   get 'tests/account_completion', to: 'tests#account_completion'
+  get 'tests/putting_item', to: 'tests#putting_item'
 end
