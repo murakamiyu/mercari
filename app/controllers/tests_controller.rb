@@ -1,7 +1,7 @@
 class TestsController < ApplicationController
 
   def account
-    render
+    render :layout => nil
   end
 
   def sms_confirmation
