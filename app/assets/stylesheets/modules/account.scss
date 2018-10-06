@@ -8,25 +8,31 @@ position: relative;
     line-height: 1;
 }
 
+
 #wrapper1{
-  display: block;
+  display:block;
 }
 
 #wrapper2{
-  display: block;
+  display: none;
 }
 
 #wrapper3{
-  display: block;
+  display: none;
 }
 
 #wrapper4{
-  display: block;
+  display: none;
 }
 
 #wrapper5{
-  display: block;
+  display: none;
 }
+
+#wrapper6{
+  display:none;
+}
+
 
 .single-container {
   padding: 0 0 250px;
