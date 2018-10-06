@@ -12,7 +12,6 @@
 $(function() {
   $(".btn-mail, .btn-sns-google, .btn-sns-facebook").on('click', function(e){
     e.preventDefault();
-    console.log(this)
     $("#wrapper1,#wrapper3,#wrapper4,#wrapper5,#wrapper6").css('display', 'none');
     $("#wrapper2").css('display', 'block');
   });
@@ -22,7 +21,6 @@ $(function() {
 $(function() {
   $(".btn-info").on('click', function(e){
     e.preventDefault();
-    console.log(this)
     $("#wrapper1,#wrapper2,#wrapper4,#wrapper5,#wrapper6").css('display', 'none');
     $("#wrapper3").css('display', 'block');
   });
@@ -34,7 +32,6 @@ $(function() {
 $(function() {
   $(".btn-sms").on('click', function(e){
     e.preventDefault();
-    console.log(this)
     $("#wrapper3").css('display', 'none');
     $("#wrapper4").css('display', 'block');
   });
@@ -44,7 +41,6 @@ $(function() {
 
   $(".btn-adress").on('click', function(e){
     e.preventDefault();
-    console.log(this);
     $("#wrapper4").css('display', 'none');
     $('#wrapper5').css('display', 'block');
   });
@@ -54,7 +50,6 @@ $(function() {
 
   $(".btn-credit").on('click', function(e){
     e.preventDefault();
-    console.log(this);
     $("#wrapper5").css('display', 'none');
     $('#wrapper6').css('display', 'block');
   });
