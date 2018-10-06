@@ -31,4 +31,16 @@ Rails.application.routes.draw do
   get 'tests/credit_new', to: 'tests#credit_new'
   get 'tests/account_completion', to: 'tests#account_completion'
   get 'tests/putting_item', to: 'tests#putting_item'
+
+  get 'mypage/top', to: 'mypages#mypage'
+  get 'mypage/notification', to: 'mypages#mypage_notification'
+  get 'mypage/todo', to: 'mypages#mypage_todo'
+  get 'mypage/like/history', to: 'mypages#mypage_like_history'
+  get 'mypage/listings/listing', to: 'mypages#mypage_listings_listing'
+  get 'mypage/listings/in_progress', to: 'mypages#mypage_listings_in_progress'
+  get 'mypage/listings/completed', to: 'mypages#mypage_listings_completed'
+  get 'mypage/purchase', to: 'mypages#mypage_purchase'
+  get 'mypage/purchased', to: 'mypages#mypage_purchased'
+  get 'mypage/news', to: 'mypages#mypage_news'
+  get 'mypage/review/history', to: 'mypages#mypage_review_history'
 end
