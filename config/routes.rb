@@ -43,4 +43,7 @@ Rails.application.routes.draw do
   get 'mypage/purchased', to: 'mypages#mypage_purchased'
   get 'mypage/news', to: 'mypages#mypage_news'
   get 'mypage/review/history', to: 'mypages#mypage_review_history'
+  get 'mypage/review/history/great', to: 'mypages#mypage_review_history_great'
+  get 'mypage/review/history/good', to: 'mypages#mypage_review_history_good'
+  get 'mypage/review/history/poor', to: 'mypages#mypage_review_history_poor'
 end
