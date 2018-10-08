@@ -92,4 +92,13 @@ end
 def mypage_review_history
 end
 
+def mypage_review_history_great
+end
+
+def mypage_review_history_good
+end
+
+def mypage_review_history_poor
+end
+
 end
