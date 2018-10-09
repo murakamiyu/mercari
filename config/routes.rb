@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'tests#index'
   get 'mypages/index', to: 'mypages#index'
   get 'mypages/profile', to: 'mypages#profile'
@@ -25,11 +26,6 @@ Rails.application.routes.draw do
   get 'tests/purchase_pre_confirmation', to: 'tests#purchase_pre_confirmation'
   get 'tests/purchase_confirmation', to: 'tests#purchase_confirmation'
   get 'tests/order_status_waiting', to: 'tests#order_status_waiting'
-  get 'tests/account', to: 'tests#account'
-  get 'tests/sms_confirmation', to: 'tests#sms_confirmation'
-  get 'tests/adress_new', to: 'tests#adress_new'
-  get 'tests/credit_new', to: 'tests#credit_new'
-  get 'tests/account_completion', to: 'tests#account_completion'
   get 'tests/putting_item', to: 'tests#putting_item'
 
   get 'mypages/top', to: 'mypages#mypage'

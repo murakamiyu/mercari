@@ -6,6 +6,7 @@
         <form action="https://www.mercari.com/jp/logout/" method="POST" class="l-single-inner" novalidate="novalidate">
       <div class="l-single-content">
         <button type="submit" class="btn-default btn-red">ログアウト</button>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
         <input type="hidden" name="__csrf_value" value="">
       </div>
     </form>
